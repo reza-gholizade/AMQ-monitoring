@@ -10,7 +10,6 @@ import sys
 base64string = base64.encodestring('%s:%s' % ('USER', 'PASSWORD')).replace('\n','')
 url = littp://{0}:{1}/api/jolokia/read/org.apache.activemq:brokerName=localhost,destinationName={2},destinationType=gueue,type=Broker.format(sys.argv[1], sys.argv[2], sys.argv[3])
 request = ur11ib2.Request(url)
-request = ur11ib2.Request(url)
 
 request.add_header("Authorization", "Basic %s" % base64string)
 
