@@ -4,7 +4,7 @@ import json
 import sys
 
 # first argument should be IP 
-#second argument should be PORT
+# second argument should be PORT
 
 def jsonparser():
     result = json.loads(r.content)
