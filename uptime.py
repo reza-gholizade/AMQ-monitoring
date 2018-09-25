@@ -15,7 +15,7 @@ def jsonparser():
         return "OK"
 urll = 'http://{}:{}/api/jolokia/read/org.apache.activemq:brokerName=localhost,type=Broker'.format(sys.argv[1], sys.argv[2])
 try:
-    r = requests.get(url=urll, auth=('admin', '@ctiveMQ'))
+    r = requests.get(url=urll, auth=('USERNAME', 'PASSWORD'))
     print(jsonparser())
 except ValueError as a:
     print(a)
