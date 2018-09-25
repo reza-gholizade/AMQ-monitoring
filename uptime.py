@@ -18,4 +18,4 @@ try:
     r = requests.get(url=urll, auth=('USERNAME', 'PASSWORD'))
     print(jsonparser())
 except ValueError as a:
-    print(a)
+    print a
